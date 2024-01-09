@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+<!----------------------------- start navbar ------------------------------>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+
+        <div class="container">
+
+            <div class="d-flex align-items-center">
+                <div class="logo-img">
+                    <img class="w-100" src="images/logo@2x.png" alt="logo">
+                </div>
+                <div>
+                    <a class="navbar-brand" href="#">Weather</a>
+                    <p class="navbar-text">tagline goes here</p>
+                </div>
+
+            </div>
+            
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link rounded-pill active" href="#" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link rounded-pill" href="#">News</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link rounded-pill" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link rounded-pill" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link rounded-pill" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+<!----------------------------- end navbar -------------------------------->
+
+
+
+<!----------------------------- start Home -------------------------------->
+
+    <section id="home" class="home py-1">
+        
+        <div class="container mt-5 py-4">
+            
+            <div class="row g-3">
+                <div class="position-relative mb-5">
+                    <input id="inputLocation" class="form-control rounded-pill text-white" type="text"
+                        placeholder="Find your location...">
+                    <button id="FindBtn" class="btn position-absolute rounded-pill">Find</button>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="weather-card">
+                        <div id="mainHeader" class="d-flex justify-content-between p-2">
+                            <h4 id="currentDay">Tuesday</h4>
+                            <h4 id="currentDate">9January</h4>
+                        </div>
+                        <h3 id="cityName" class="ps-4 mt-2">Cairo</h3>
+                        <div id="mainContent" class=" d-flex justify-content-between align-items-center px-4">
+                            <div>
+                                <p id="temp">17<span id="dgree" class="position-relative">o</span>C</p>
+                            </div>
+                            <div>
+                                <img id="tempIcon" class="mainContent-icon" src="images/1113.png" alt="">
+                            </div>
+                        </div>
+                        <div id="firstFooter" class="ps-4" >
+                            <p id="text">clear</p>
+                        </div>
+                        <div id="secondFooter" class="p-4">
+                            <img class="weather-icon" src="images/icon-umberella@2x.png" alt="">
+                            <span class="mr-2 text-white opacity-75">20%</span>
+                            <img class="weather-icon" src="images/icon-wind@2x.png" alt="">
+                            <span class="mr-2 text-white opacity-75">18km/h</span>
+                            <img class="weather-icon" src="images/icon-compass@2x.png" alt="">
+                            <span class="mr-2 text-white opacity-75">East</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="weather-card-two">
+                        <div id="secondHeader" class="d-flex justify-content-center p-2">
+                            <h4 id="nextDay">wednesday</h4>
+                        </div>
+                        <img id="nextTempIcon" class="d-block mx-auto mt-4 mb-3" src="images/113.png" alt="">
+                            <div class="text-center">
+                                <p id="secondTempBig" class="bigDegree">23.3<span class="position-relative sec-dgree">o</span>C</pd>
+                                <p id="secondTempsmall" class="smallDegree">14.2<span class="position-relative third-dgree">o</span></p>
+                            </div>
+                        <div id="firstFooter" class="text-center" >
+                            <p id="secondText">Sunny</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="weather-card-three">
+                        <div id="thirdHeader" class="d-flex justify-content-center p-2">
+                            <h4 id="comingDay">Thursday</h4>
+                        </div>
+                        <img id="thirdIcon" class="d-block mx-auto mt-4 mb-3" src="images/113.png" alt="">
+                            <div class="text-center">
+                                <p id="thirdTempBig" class="bigDegree">23.3<span class="position-relative sec-dgree">o</span>C</pd>
+                                <p id="thirdTempsmall" class="smallDegree">14.2<span class="position-relative third-dgree">o</span></p>
+                            </div>
+                        <div id="firstFooter" class="text-center" >
+                            <p id="thidText">Sunny</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<!----------------------------- end Home ---------------------------------->
+
+
+
+<!----------------------------- start Footer ------------------------------>
+
+    <footer class="footer p-1">
+
+        <div class="container mt-5 mx-auto">
+            
+            <div class="row">
+
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div class="position-relative mb-5 w-md-50 w-75">
+                        <input id="inputsubscribe" class="form-control rounded-pill text-white" type="text"
+                            placeholder="Enter your email to subscribe...">
+                        <button id="subBtn" class="btn position-absolute rounded-pill">Subscribe</button>
+                        <p class="m-3 copy-right">Copyright 2024 Company name. Designed by <span>Mohamed Fawzzi</span>. All rights reserved</p>
+                    </div>
+
+                    <div class="d-flex mx-3 footer-icons">
+                        <a href="#" class="icons-container">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icons-container">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="icons-container">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="icons-container">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+<!----------------------------- end Footer -------------------------------->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
